@@ -1,9 +1,7 @@
-
-import fleur from './images/fleur-de-lis.png';
 import './App.css';
-
 import  { Breakpoint, BreakpointProvider } from 'react-socks';
 import LargeHeader from "./components/largeHeader.js"
+import MediumHeader from "./components/mediumHeader.js"
 
 function App() {
 
@@ -21,9 +19,7 @@ function App() {
           <LargeHeader/>
         </Breakpoint>
         <Breakpoint medium only>
-          <header className="tablet-header">
-            <img src={fleur} className="tablet-logo" alt="logo" />
-          </header>
+          <MediumHeader/>
         </Breakpoint>
       </div>
     </BreakpointProvider>
