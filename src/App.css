@@ -13,6 +13,17 @@
   padding-bottom: 15px;
 }
 
+.tablet-header{
+  height: 67px;
+  justify-content: start;
+}
+
+.tablet-logo {
+  height: 50px;
+  opacity: 0.5;
+  padding-left: 15px;
+  padding-top: 7px;
+}
 .fleur-img {
   height: 10px;
 }
@@ -23,9 +34,17 @@
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   background-image: url("./images/black-texture.jpg");
   background-size: cover;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1440px;
+  min-width: 992px;
 }
 
 .left-navs, .nav-link, .right-navs {

@@ -1,6 +1,9 @@
-import logo from './images/main-logo.png';
+
+import fleur from './images/fleur-de-lis.png';
 import './App.css';
-import HomeLink from "./components/homeLink.js"
+
+import  { Breakpoint, BreakpointProvider } from 'react-socks';
+import LargeHeader from "./components/largeHeader.js"
 
 function App() {
 
@@ -10,20 +13,20 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {runConsole()}
-      <header className="App-header">
-        <div className="left-navs">
-          <HomeLink name="About"/>
-          <HomeLink name="Projects"/>
-        </div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <div className="right-navs">
-          <HomeLink name="Blog"/>
-          <HomeLink name="Contact"/>
-        </div>
-      </header>
-    </div>
+    <BreakpointProvider>
+    
+      <div className="App">
+        {runConsole()}
+        <Breakpoint large up>
+          <LargeHeader/>
+        </Breakpoint>
+        <Breakpoint medium only>
+          <header className="tablet-header">
+            <img src={fleur} className="tablet-logo" alt="logo" />
+          </header>
+        </Breakpoint>
+      </div>
+    </BreakpointProvider>
   );
 }
 
