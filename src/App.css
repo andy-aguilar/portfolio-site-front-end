@@ -10,12 +10,30 @@ html {
 
 #bottom-button {
   position: fixed;
-  bottom: 10px;
+  bottom: 15px;
   z-index: 10;
+  color: #AD8C2F;
+  font-size: 20px;
+  transition-property: font-size;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+
+#bottom-button:hover {
+  font-size: 40px;
 }
 
 #top-button {
   position: fixed;
   top: 10px;
   z-index: 10;
+  color: #AD8C2F;
+  font-size: 20px;
+  transition-property: font-size;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+
+#top-button:hover {
+  font-size: 40px;
 }

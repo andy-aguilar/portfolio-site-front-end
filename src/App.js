@@ -6,6 +6,8 @@ import LargeAbout from "./components/about/largeAbout"
 import LargeProjects from "./components/projects/largeProjects"
 import LargeBlog from "./components/blog/largeBlog"
 import LargeContact from "./components/contact/largeContact"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
@@ -38,15 +40,35 @@ function App() {
 
   const scrollToSec = (section) => {
     if (section === "home"){
-      window.scrollTo(0, 0)
+      window.scrollTo({
+        top:0,
+        left: 0,
+        behavior: "smooth"
+      })
     } else if (section === "about"){
-      window.scrollTo(0, window.innerHeight)
+      window.scrollTo({
+        top: window.innerHeight,
+        left: 0,
+        behavior: "smooth"
+      })
     } else if (section === "projects"){
-      window.scrollTo(0, window.innerHeight * 2)
+      window.scrollTo({
+        top: window.innerHeight *2,
+        left: 0,
+        behavior: "smooth"
+      })
     } else if (section === "blog"){
-      window.scrollTo(0, window.innerHeight * 3)
+      window.scrollTo({
+        top: window.innerHeight * 3,
+        left: 0,
+        behavior: "smooth"
+      })
     } else if (section === "contact"){
-      window.scrollTo(0, window.innerHeight * 4)
+      window.scrollTo({
+        top: window.innerHeight * 4,
+        left: 0,
+        behavior: "smooth"
+      })
     } 
 
 }
@@ -95,8 +117,8 @@ function App() {
             <LargeProjects />
             <LargeBlog />
             <LargeContact />
-            {topBtn ? <button id="top-button" onClick={handleUpClick}>^</button> : null}
-            {bottomBtn ? <button id="bottom-button" onClick={handleDownClick}>down</button> : null}
+            {topBtn ? <FontAwesomeIcon id="top-button" icon={faChevronUp} onClick={handleUpClick} /> : null}
+            {bottomBtn ? <FontAwesomeIcon id="bottom-button" icon={faChevronDown} onClick={handleDownClick} /> : null}
             {/* style={{display: topBtn ? "inline" : "none"}} */}
             
           </div>
