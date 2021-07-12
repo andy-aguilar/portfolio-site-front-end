@@ -1,0 +1,16 @@
+#blog-container {
+    background-image: url("../../images/joe-woods-4Zaq5xY5M_c-unsplash.jpg");
+    scroll-snap-align: start;
+}
+
+#blog {
+    height: 100vh;
+    
+}
+
+#blog h1 {
+    font-family: "Source Code Pro";
+    color: #2F4AAE;
+    font-weight: 400;
+    font-size: 70px;
+}

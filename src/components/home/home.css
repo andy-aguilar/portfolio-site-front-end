@@ -1,19 +1,61 @@
-.App-home {
-  /* background-color: black; */
+#home-container {
+  background-image: url("../../images/joe-woods-4Zaq5xY5M_c-unsplash.jpg");
+
 }
 
-.App-home h1 {
+.App-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #2f4aaea2 */
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-link {
+  text-align: left;
+  width: 1200px;
+  border-bottom: 1px solid #AD8C2F;
+  cursor: pointer;
+  transition-property: padding;
+  transition-duration: 2s;
+}
+
+.home-link:hover {
+  padding-left: 200px;
+}
+
+.home-link:hover h1 {
+  font-family: "Source Code Pro";
+  color: #AD8C2F;
+  font-weight: 400;
+  font-size: 70px;
+}
+
+.about {
+  border-top: 1px solid #AD8C2F;
+}
+
+
+.home-link h1 {
   font-family: "Source Code Pro";
   color: #2F4AAE;
   font-weight: 400;
   font-size: 70px;
 }
 
+
+
+
 .tablet-header{
   height: 67px;
   justify-content: start;
 }
 
-.home-link {
-  text-align: left;
-}

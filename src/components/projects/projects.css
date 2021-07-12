@@ -1,0 +1,17 @@
+#projects-container {
+    background-image: url("../../images/joe-woods-4Zaq5xY5M_c-unsplash.jpg");
+    scroll-snap-align: start;
+}
+
+#projects {
+    height: 100vh;
+    background-color: #2f4aae63
+    
+}
+
+#projects h1 {
+    font-family: "Source Code Pro";
+    color: #AD8C2F;
+    font-weight: 400;
+    font-size: 70px;
+}

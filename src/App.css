@@ -1,4 +1,21 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
+html {
+  scroll-snap-type: y proximity;
+}
+
+#bottom-button {
+  position: fixed;
+  bottom: 10px;
+  z-index: 10;
+}
+
+#top-button {
+  position: fixed;
+  top: 10px;
+  z-index: 10;
+}
