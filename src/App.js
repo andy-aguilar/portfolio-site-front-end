@@ -1,7 +1,7 @@
 import './App.css';
 import  { Breakpoint, BreakpointProvider } from 'react-socks';
-import LargeHeader from "./components/largeHeader.js"
-import MediumHeader from "./components/mediumHeader.js"
+import LargeHome from "./components/home/largeHome"
+
 
 function App() {
 
@@ -16,10 +16,10 @@ function App() {
       <div className="App">
         {runConsole()}
         <Breakpoint large up>
-          <LargeHeader/>
+          <LargeHome />
         </Breakpoint>
         <Breakpoint medium only>
-          <MediumHeader/>
+          
         </Breakpoint>
       </div>
     </BreakpointProvider>

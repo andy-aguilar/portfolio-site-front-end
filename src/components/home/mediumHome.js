@@ -1,5 +1,6 @@
 import React from 'react'
-import fleur from '../images/fleur-de-lis.png';
+import fleur from '../../images/fleur-de-lis.png';
+import "./headers.css"
 
 export default function MediumHeader() {
     return (

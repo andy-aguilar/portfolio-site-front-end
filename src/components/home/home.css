@@ -1,0 +1,19 @@
+.App-home {
+  /* background-color: black; */
+}
+
+.App-home h1 {
+  font-family: "Source Code Pro";
+  color: #2F4AAE;
+  font-weight: 400;
+  font-size: 70px;
+}
+
+.tablet-header{
+  height: 67px;
+  justify-content: start;
+}
+
+.home-link {
+  text-align: left;
+}
