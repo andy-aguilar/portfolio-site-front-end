@@ -1,12 +1,21 @@
 #about-container {
     background-image: url("../../images/joe-woods-4Zaq5xY5M_c-unsplash.jpg");
     scroll-snap-align: start;
+    height: 100vh;
+}
+
+#about-color {
+    height: 100vh;
+    background-color: #ad8b2f63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #about {
-    height: 100vh;
-    background-color: #ad8b2f63
-    
+    background-color: #ffffff9e;
+    min-height: 700px;
+    min-width: 1200px;
 }
 
 #about h1 {
