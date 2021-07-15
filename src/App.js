@@ -13,6 +13,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 function App() {
   const [topBtn, setTopBtn] = useState(false)
   const [bottomBtn, setBottomBtn] = useState(true)
+  const [arrowColor, setArrowColor] = useState("black")
 
   
   const setBtns = useCallback( () => {
@@ -45,30 +46,35 @@ function App() {
         left: 0,
         behavior: "smooth"
       })
+      setArrowColor("black")
     } else if (section === "about"){
       window.scrollTo({
         top: window.innerHeight,
         left: 0,
         behavior: "smooth"
       })
+      setArrowColor("white")
     } else if (section === "projects"){
       window.scrollTo({
         top: window.innerHeight *2,
         left: 0,
         behavior: "smooth"
       })
+      setArrowColor("black")
     } else if (section === "blog"){
       window.scrollTo({
         top: window.innerHeight * 3,
         left: 0,
         behavior: "smooth"
       })
+      setArrowColor("white")
     } else if (section === "contact"){
       window.scrollTo({
         top: window.innerHeight * 4,
         left: 0,
         behavior: "smooth"
       })
+      setArrowColor("black")
     } 
 
 }
@@ -117,14 +123,14 @@ function App() {
             <LargeProjects />
             <LargeBlog />
             <LargeContact />
-            {topBtn ? <FontAwesomeIcon id="top-button" icon={faChevronUp} onClick={handleUpClick} /> : null}
-            {bottomBtn ? <FontAwesomeIcon id="bottom-button" icon={faChevronDown} onClick={handleDownClick} /> : null}
+            {topBtn ? <FontAwesomeIcon id="top-button" style={{color:arrowColor}} icon={faChevronUp} onClick={handleUpClick} /> : null}
+            {bottomBtn ? <FontAwesomeIcon id="bottom-button" style={{color:arrowColor}} icon={faChevronDown} onClick={handleDownClick} /> : null}
             {/* style={{display: topBtn ? "inline" : "none"}} */}
             
           </div>
         </Breakpoint>
         <Breakpoint medium only>
-          
+          <h1>Zidar Sucks</h1>
         </Breakpoint>
       </div>
     </BreakpointProvider>

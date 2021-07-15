@@ -3,11 +3,20 @@
     scroll-snap-align: start;
 }
 
-#contact {
+#contact-color {
     height: 100vh;
-    background-color: #ad8b2f63
-    
+    background-color: #ffffff63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#contact{
+    background-color: #0000009e;
+    min-height: 700px;
+    min-width: 1200px;
+}
+
 
 #contact h1 {
     font-family: "Source Code Pro";

@@ -4,6 +4,7 @@
 }
 
 .App-home {
+  background-color: #ffffff63;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +23,7 @@
 .home-link {
   text-align: left;
   width: 1200px;
-  border-bottom: 1px solid #AD8C2F;
+  border-bottom: 1px solid black;
   cursor: pointer;
   transition-property: padding;
   transition-duration: 2s;
@@ -34,19 +35,19 @@
 
 .home-link:hover h1 {
   font-family: "Source Code Pro";
-  color: #AD8C2F;
+  color: white;
   font-weight: 400;
   font-size: 70px;
 }
 
 .about {
-  border-top: 1px solid #AD8C2F;
+  border-top: 1px solid black;
 }
 
 
 .home-link h1 {
   font-family: "Source Code Pro";
-  color: #2F4AAE;
+  color: black;
   font-weight: 400;
   font-size: 70px;
 }

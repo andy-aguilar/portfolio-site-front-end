@@ -4,8 +4,11 @@ import "./contact.css"
 export default function largeContact() {
     return (
         <div id="contact-container">
-            <div id="contact" >
-                contact
+            <div id="contact-color" >
+                <div id="contact">
+                    contact
+                </div>
+
             </div>
         </div>
     )

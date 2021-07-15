@@ -3,9 +3,18 @@
     scroll-snap-align: start;
 }
 
-#blog {
+#blog-color {
     height: 100vh;
-    
+    background-color: #00000063;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog {
+    background-color: #ffffff9e;
+    min-height: 700px;
+    min-width: 1200px;
 }
 
 #blog h1 {

@@ -3,10 +3,18 @@
     scroll-snap-align: start;
 }
 
-#projects {
+#projects-color {
     height: 100vh;
-    background-color: #2f4aae63
-    
+    background-color: #ffffff63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects{
+    background-color: #0000009e;
+    min-height: 700px;
+    min-width: 1200px;
 }
 
 #projects h1 {
